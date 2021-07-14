@@ -1,0 +1,258 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
+
+body,div,header,footer,nav,a,section,h1,ul,li,span{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+header,nav,section,div,footer{
+    display: block;
+}
+
+/* Type */
+
+body {
+    color: #9a9a9a;
+    font-family: 'Times New Roman', Times, serif ;
+    font-size: 13pt;
+    font-weight: 300;
+    line-height: 1.65;
+}
+
+/* Banner */
+
+#banner {
+        padding: 12em 0 10em 0;
+        background-color: rgb(3, 3, 3);
+        background-size: cover;
+        background-position: top;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+    
+    #banner h1 {
+        font-size: 5.5em;
+        font-weight: 100;
+        color: #fff;
+        line-height: 1em;
+        margin: 0 0 0.5em 0;
+        padding: 0;
+    }
+
+    
+
+
+    /* Header */
+
+#header {
+    color: white;
+    width: 100%;
+    height: 3.25em;
+    left: 0;
+    position: absolute;
+    text-align: right;
+    top: 4em;
+    z-index: 10001;
+
+}
+
+#header .inner {
+    margin: 0 auto;
+    position: relative;
+}
+
+.inner {
+    max-width: 70em;
+    margin: 0 auto;
+}
+
+#header a{
+    color: inherit;
+    font-size: 8em;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 0.75em;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Active tab */
+
+
+#header a:hover {
+    color: blue;
+}
+
+a{
+    color: #5385c1;
+    text-decoration: underline;
+}
+#header a.navPanelToggle{
+    display: none;
+    text-decoration: none;
+    height: 4em;
+    width: 4em;
+    z-index: 10003;
+}
+#header a:last-child {
+    padding-right: 0;
+}
+#header a {
+    transition: color 0.2s ease-in-out;
+    color: inherit;
+    font-size: .8em;
+}
+
+
+
+
+
+/* Flex */
+
+.flex {
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+}
+
+   
+
+
+    /* Footer */
+
+#footer{
+    background-color: black;
+}
+
+#footer .inner {
+border-top: 1px solid #dbdbdb;
+padding-top: 3em;
+}
+
+#footer .copyright {
+color: #bbb;
+font-size: 0.8em;
+margin: 0 0 2em 0;
+padding: 0;
+}
+
+#footer .copyright a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+    #footer .copyright a:hover {
+        color: #bbb;
+        text-decoration: underline;
+    }
+
+#footer ul.icons li .icon {
+font-size: 0.58em;
+}
+
+@media screen and (max-width: 736px) {
+
+#footer .inner {
+    padding-top: 2em;
+}
+
+#footer .copyright {
+    -ms-flex-order: 2;
+    -moz-order: 2;
+    -webkit-order: 2;
+    -ms-order: 2;
+    order: 2;
+}
+
+#footer ul {
+    -ms-flex-order: 1;
+    -moz-order: 1;
+    -webkit-order: 1;
+    -ms-order: 1;
+    order: 1;
+}
+
+#footer .flex {
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+}
+
+}
+
+
+    /* list */
+
+ul {
+    list-style: disc;
+    margin: 0 0 2em 0;
+    padding-left: 1em;
+}
+
+    ul li {
+        padding-left: 0.5em;
+    }
+
+  
+    ul.icons {
+        cursor: default;
+        list-style: none;
+        padding-left: 0;
+    }
+
+        ul.icons li {
+            display: inline-block;
+            padding: 0 1em 0 0;
+        }
+
+            ul.icons li:last-child {
+                padding-right: 0;
+            }
+
+            ul.icons li .icon:before {
+                font-size: 2em;
+            }
+
+   
+      
+
+         /* Icon */
+
+.icon {
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+    }
+    
+    .icon:before {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-transform: none !important;
+    }
+    
+    .icon > .label {
+        display: none;
+    }
